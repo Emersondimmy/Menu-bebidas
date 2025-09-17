@@ -1,0 +1,121 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Imagem */
+.drink-img {
+  display: block;
+  max-width: 100%;
+  height: 350px;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.drink-img:hover {
+  transform: scale(1.05); /* zoom leve ao passar o mouse */
+}
+
+/* Tabela principal */
+.tabela-ingredientes {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+  overflow-x: auto;
+}
+
+.tabela-ingredientes th,
+.tabela-ingredientes td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.tabela-ingredientes th {
+  background-color: #f2f2f2;
+}
+
+/* Extras */
+.extras {
+  margin-bottom: 30px;
+  font-size: 1rem;
+  background-color: #fff;
+  padding: 10px;
+  border-left: 4px solid #555;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Texto com títulos */
+.tabela-texto {
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.tabela-texto h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.tabela-texto p {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .extras,
+  .tabela-texto {
+    padding: 10px;
+  }
+
+  .tabela-ingredientes th,
+  .tabela-ingredientes td {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
+footer {
+  text-align: center;
+  padding: 15px 10px;
+  background-color: #222;
+  color: #eee;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 5px 0;
+  
+}
+footer p a{
+  text-decoration: none;
+  color: rgb(231, 124, 124);
+}
+footer p a:visited{
+  color:rgb(231, 124, 124) ;
+  text-decoration: none;
+}
